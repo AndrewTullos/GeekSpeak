@@ -181,7 +181,56 @@ footer {
 	}
 }
 
-/* LOGIN PAGE */
+/* DASHBOARD STYLING */
+
+.dashboard-container {
+	margin: 20px;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.user-actions {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.user-posts h3 {
+	color: #60b80a; /* Alien Green */
+	margin-bottom: 15px;
+}
+
+.posts-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.post-item {
+	background-color: #f4f4f4;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-left: 5px solid #8a4d76; /* Cosmic Purple */
+}
+
+.post-item h4 {
+	margin: 0 0 5px 0;
+}
+
+.btn {
+	padding: 10px 15px;
+	background-color: #60b80a; /* Alien Green */
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+.btn:hover {
+	background-color: #529e07; /* Darker Green */
+}
+
+/* LOGIN PAGE STYLING */
 
 .auth-container {
 	display: flex;

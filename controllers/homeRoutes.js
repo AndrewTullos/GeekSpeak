@@ -79,4 +79,16 @@ router.get("/login", (req, res) => {
 	res.render("login");
 });
 
+router.get("/dashboard", withAuth, (req, res) => {
+	console.log("Accessing dashboard");
+
+	// Render the dashboard page
+	try {
+		res.render("dashboard");
+	} catch (err) {
+		console.error("Error rendering dashboard:", err);
+		res.status(500).send("Error rendering dashboard");
+	}
+});
+
 module.exports = router;
