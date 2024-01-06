@@ -1,0 +1,253 @@
+/* Reset */
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+nav,
+main,
+footer {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Background Color */
+body {
+	background-color: #000000; /* Galactic Black */
+	font-family: Arial, sans-serif;
+	color: #c0c0c0; /* Satellite Silver */
+	line-height: 1.4;
+}
+
+/* Header styling */
+header {
+	background-color: #60b80a; /* Alien Green */
+	color: #ffffff; /* White */
+	padding: 20px;
+	text-align: center;
+}
+
+/* Logo and title styling */
+#logo {
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
+/* Navigation menu styling */
+nav {
+	background-color: #8a4d76; /* Cosmic Purple */
+	padding: 10px 0;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #ffffff; /* White text */
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+/* Main content container */
+.container {
+	margin: 20px;
+	padding: 20px;
+	background-color: #ffffff; /* White background */
+	border-radius: 5px;
+}
+
+/* Article styles */
+article {
+	margin-bottom: 20px;
+}
+
+article h2 {
+	color: #44c0f2; /* Neon Blue */
+	margin-bottom: 10px;
+}
+
+article h3 {
+	color: #60b80a; /* Alien Green */
+	margin-bottom: 5px;
+}
+
+/* Post footer styles */
+.post-footer {
+	color: #c0c0c0; /* Satellite Silver */
+	font-style: italic;
+	margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+	background-color: #434343; /* Outer Space Gray */
+	color: #c0c0c0; /* Satellite Silver */
+	padding: 10px;
+	text-align: center;
+}
+
+/* HOMEPAGE STYLING */
+.home-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+}
+
+.featured-article {
+	flex-grow: 2;
+	margin-right: 20px;
+}
+
+.featured-article h2 {
+	color: #60b80a; /* Alien Green */
+	margin-bottom: 10px;
+}
+
+.featured-article article {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+}
+
+.featured-article h3 {
+	color: #8a4d76; /* Cosmic Purple */
+	margin-bottom: 5px;
+}
+
+.featured-article p {
+	color: #333;
+	line-height: 1.6;
+}
+
+.sidebar {
+	flex-basis: 30%;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+	color: #60b80a;
+	margin-bottom: 10px;
+}
+
+.latest-posts {
+	list-style-type: none;
+}
+
+.latest-posts li a {
+	color: #8a4d76;
+	text-decoration: none;
+}
+
+.latest-posts li a:hover {
+	text-decoration: underline;
+}
+
+.site-footer {
+	background-color: #434343; /* Outer Space Gray */
+	color: #c0c0c0; /* Satellite Silver */
+	padding: 10px;
+	text-align: center;
+}
+
+/* Responsive styles for better mobile viewing */
+@media (max-width: 768px) {
+	.home-container {
+		flex-direction: column;
+	}
+	.featured-article,
+	.sidebar {
+		flex-basis: auto;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+}
+
+/* LOGIN PAGE */
+
+.auth-container {
+	display: flex;
+	justify-content: space-around;
+	margin: 20px;
+}
+
+.login-container,
+.signup-container {
+	flex-basis: 45%;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-input {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+
+.btn {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #60b80a; /* Alien Green */
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.btn:hover {
+	background-color: #529e07; /* Darker Alien Green */
+}
+
+h2 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.form-input:focus {
+	border-color: #44c0f2; /* Neon Blue */
+	outline: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+	.auth-container {
+		flex-direction: column;
+	}
+	.login-container,
+	.signup-container {
+		flex-basis: auto;
+		margin-bottom: 20px;
+	}
+}
