@@ -6,11 +6,7 @@ const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const helpers = require("./utils/helpers");
-const routes = require("./controllers"); // Main route file
-const userRoutes = require("./controllers/api/userRoutes");
-const authRoutes = require("./controllers/authRoutes");
-const postRoutes = require("./controllers/api/postRoutes");
-const authController = require("./controllers/authController");
+const routes = require("./controllers");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -20,7 +16,7 @@ const hbs = exphbs.create({ helpers });
 
 // Configure session middleware
 const sess = {
-	secret: process.env.SESSION_SECRET || "Super secret secret", // Use an environment variable for the secret
+	secret: process.env.SESSION_SECRET || "Super secret secret",
 	cookie: {
 		maxAge: 300000,
 		httpOnly: true,
@@ -45,13 +41,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Define routes
 app.use(routes);
-app.use("/api/users", userRoutes);
-app.use(authRoutes);
-app.use("/", postRoutes);
-app.get("/logout", authController.logout);
 
 // Error handling middleware
-
 // app.use((err, req, res, next) => {
 //     // Error handling logic here
 // });

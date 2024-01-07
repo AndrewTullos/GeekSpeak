@@ -1,3 +1,4 @@
-exports.getPostPage = (req, res) => {
-	res.send("This is the post page");
+exports.createPostForm = (req, res) => {
+	console.log("This is a test");
+	res.render("post");
 };

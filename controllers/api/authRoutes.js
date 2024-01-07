@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const authController = require("../controllers/authController");
-const authMiddleware = require("../middleware/authMiddleware");
+const authController = require("../authController");
+const authMiddleware = require("../../middleware/authMiddleware");
 
 // Logout route
 router.get("/logout", authController.logout);
