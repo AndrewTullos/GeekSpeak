@@ -300,3 +300,87 @@ h2 {
 		margin-bottom: 20px;
 	}
 }
+
+/* POST STYLING */
+
+.create-post-container {
+	margin: 20px;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.create-post-form .form-group {
+	margin-bottom: 15px;
+}
+
+.create-post-form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.create-post-form input[type="text"],
+.create-post-form textarea {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+
+.btn {
+	padding: 10px 15px;
+	background-color: #60b80a; /* Alien Green */
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+.btn:hover {
+	background-color: #529e07; /* Darker Green */
+}
+
+/* PROFILE STYLING */
+
+.profile-container {
+	margin: 20px;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.user-info h3 {
+	color: #60b80a; /* Alien Green */
+	margin-bottom: 5px;
+}
+
+.posts-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.post-item {
+	background-color: #f4f4f4;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-left: 5px solid #8a4d76; /* Cosmic Purple */
+}
+
+.post-item h4 {
+	margin: 0 0 5px 0;
+}
+
+.btn {
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #60b80a; /* Alien Green */
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.btn:hover {
+	background-color: #529e07; /* Darker Green */
+}

@@ -1,47 +1,50 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Post extends Model {}
+class BlogPost extends Model {}
 
-Post.init(
+BlogPost.init(
 	{
+		// ID field
 		id: {
 			type: DataTypes.INTEGER,
 			allowNull: false,
 			primaryKey: true,
 			autoIncrement: true,
 		},
-		name: {
+		// Title field
+		title: {
 			type: DataTypes.STRING,
 			allowNull: false,
 		},
-		description: {
-			type: DataTypes.STRING,
+		// Content field
+		content: {
+			type: DataTypes.TEXT,
+			allowNull: false,
 		},
-		date_created: {
+		// Author field
+		author: {
+			type: DataTypes.STRING,
+			allowNull: false,
+		},
+		// Post date field
+		post_date: {
 			type: DataTypes.DATE,
 			allowNull: false,
-			defaultValue: DataTypes.NOW,
 		},
-		needed_funding: {
-			type: DataTypes.FLOAT,
+		// Category field
+		category: {
+			type: DataTypes.STRING,
 			allowNull: false,
-		},
-		user_id: {
-			type: DataTypes.INTEGER,
-			references: {
-				model: "user",
-				key: "id",
-			},
 		},
 	},
 	{
 		sequelize,
-		timestamps: false,
-		freezeTableName: true,
-		underscored: true,
-		modelName: "post",
+		timestamps: false, // Disable Sequelize auto timestamps (createdAt, updatedAt)
+		freezeTableName: true, // Prevent Sequelize from pluralizing the table name
+		underscored: true, // Use underscores instead of camelCasing
+		modelName: "blog_post", // Define the model name
 	}
 );
 
-module.exports = Post;
+module.exports = BlogPost;

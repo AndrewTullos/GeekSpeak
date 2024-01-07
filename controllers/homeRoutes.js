@@ -80,10 +80,11 @@ router.get("/login", (req, res) => {
 });
 
 router.get("/dashboard", withAuth, (req, res) => {
-	console.log("Accessing dashboard");
+	// console.log("Accessing dashboard");
 
 	// Render the dashboard page
 	try {
+		console.log("Accessing dashboard");
 		res.render("dashboard");
 	} catch (err) {
 		console.error("Error rendering dashboard:", err);
